@@ -309,6 +309,7 @@ Represents a message sent in a channel within Discord.
 
 > warn
 > Type `19` and `20` are only available in API v8 and above. In v6, they are represented as type `0`.  Additionally, type `21` is only available in API v9 and above.
+> Type`13` and `30` are unused or removed.
 
 | Type                                         | Value | Deletable |
 |----------------------------------------------|-------|-----------|
@@ -325,6 +326,7 @@ Represents a message sent in a channel within Discord.
 | GUILD_BOOST_TIER_2                           | 10    | true      |
 | GUILD_BOOST_TIER_3                           | 11    | true      |
 | CHANNEL_FOLLOW_ADD                           | 12    | true      |
+| GUILD_STREAM^                                | 13    | true      |
 | GUILD_DISCOVERY_DISQUALIFIED                 | 14    | false     |
 | GUILD_DISCOVERY_REQUALIFIED                  | 15    | false     |
 | GUILD_DISCOVERY_GRACE_PERIOD_INITIAL_WARNING | 16    | false     |
@@ -341,9 +343,11 @@ Represents a message sent in a channel within Discord.
 | STAGE_START                                  | 27    | true      |
 | STAGE_END                                    | 28    | true      |
 | STAGE_SPEAKER                                | 29    | true      |
+| STAGE_HAND_UP^                               | 30    | true      |
 | STAGE_TOPIC                                  | 31    | true      |
 | GUILD_APPLICATION_PREMIUM_SUBSCRIPTION       | 32    | false     |
 
+^ Unused/Removed
 \* Can only be deleted by members with `MANAGE_MESSAGES` permission
 
 ###### Message Activity Structure
